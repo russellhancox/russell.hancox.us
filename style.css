@@ -10,13 +10,12 @@
 	text-decoration: none;
 	border: none;
 	outline: none;
-	list-style: none;
 	color: #555;
 }
 
 body 
 {
-	max-width: 700px;
+	max-width: 960px;
 	padding: 0px;
 	margin: 42px;
 	color: #555;
@@ -52,19 +51,20 @@ p, li
 {
   	font-weight: 300;
   	color: #777;
-	margin-right: -15px;
+	margin-right: -7px; 
 }
 
 #surname 
 {
   	font-weight: 100;
   	color: #CCC;
+	margin-left: -8px; 
 }
 
 #nav ul 
 {
-  padding-left: 0px;
-  display: inline;
+	padding-left: 0px;
+	display: inline;
 }
 
 #nav li 
@@ -72,11 +72,12 @@ p, li
 	display: inline;
 	text-transform: uppercase;
 	margin-right: 8px;
+	list-style: none;
 }
 
 #nav li a 
 {
-  color: #999;
+	color: #999;
 }
 
 #nav li a:hover 
@@ -134,7 +135,7 @@ ul.bulleted li
 	position: relative;
 	top: -10px;
 	width: 66px;
-	height: 54px;
+	height: 66px;
 	margin-bottom: -10px;
 }
 
@@ -147,8 +148,8 @@ ul.bulleted li
 }
 
 .month 	{ top: 10px; left: 0; width: 33px; height: 30px;}
-.day 	{ top: 30px; left: 0; width: 33px; height: 28px;}
-.year 	{ bottom: 0; right: 13px; width: 20px; height: 60px;}
+.day 	{ top: 30px; left: 0; width: 33px; height: 26px;}
+.year 	{ top: 0; right: 13px; width: 20px; height: 60px;}
 
 .m-1 { background-position: 0 0px;}
 .m-2 { background-position: 0 -30px;}
@@ -206,23 +207,16 @@ ul.bulleted li
 .y-2014 { background-position: -150px -300px;}
 
 /*-------------------- footer --------------------*/
-#footer 
-{
-	color: #aaa;
-	font-size: 12px;
-}
-
 #footer ul
 {
-	position: relative;
-	display: inline;
-	top: 2px;
-	left: -35px;
+	margin: 0px;
+	padding: 0px;
 }
 
 #footer li
 {
 	display: inline;
+	list-style: none;
 }
 
 #footer li a
@@ -234,5 +228,5 @@ ul.bulleted li
 #footer li a:hover
 {
 	position: relative;
-	top: -2px;
+	top: 4px;
 }

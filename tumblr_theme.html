@@ -1,0 +1,54 @@
+---
+title: Blog
+layout: default
+---
+			{block:Posts}
+				<div class="post">
+					<div class="postdate">
+			              		<div class="month m-{MonthNumber}">{Month}</div>
+						<div class="day d-{DayOfMonth}">{DayOfMonth}</div>
+						<div class="year y-{Year}">{Year}</div>
+					</div>
+					{block:Regular}
+			       		    <div class="regular"><h1>{block:Title}<a href="{Permalink}">{Title}</a>{/block:Title}</h1>{Body}</div>
+					{/block:Regular}
+					{block:Photo}
+						<div class="photo">
+							<div class="photobox">{LinkOpenTag}<img src="{PhotoURL-250}" alt="{PhotoAlt}"/>{LinkCloseTag}</div>    
+							{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+						</div>
+					{/block:Photo}
+					{block:Quote}
+						<div class="quote">
+							<div class="quotetext">&#147;{Quote}&#148;</div>
+							{block:Source}<div class="source">&mdash; {Source}</div>{/block:Source}
+						</div>
+					{/block:Quote}
+					{block:Link}
+						<div class="link">
+							<h1><a href="{URL}">{Name} →</a></h1>
+							{block:Description}<p class="description">{Description}</p>{/block:Description}
+						</div>
+					{/block:Link}
+					{block:Conversation}
+						<div class="conversation">
+							{block:Title}<h1><a href="{Permalink}">{Title}</a></h1>{/block:Title}
+							<ul>
+								{block:Lines}<li class="{Alt}">{block:Label}<span class="label">{Label}</span>{/block:Label}{Line}</li>{/block:Lines}
+							</ul>
+						</div>
+					{/block:Conversation}
+					{block:Video}
+						<div class="video">		
+							<div class="videobox">{Video-250}</div>
+							{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+						</div>
+					{/block:Video}
+					{block:Audio}
+						<div class="audio">
+							<div class="photobox"><div class="player">{AudioPlayerBlack}</div></div>
+							{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+						</div>
+					{/block:Audio}
+				</div>
+			{/block:Posts}
