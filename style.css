@@ -118,11 +118,6 @@ ul.bulleted li
 	margin-bottom: 20px;
 }
 
-.regular, .photo, .quote, .link, .conversation, .video, .audio
-{
-	padding-left: 80px;
-}
-
 .post h1
 {
 	font-size: 18px;
@@ -135,7 +130,7 @@ ul.bulleted li
 	position: relative;
 	top: -10px;
 	width: 66px;
-	height: 66px;
+	height: 64px;
 	margin-bottom: -10px;
 }
 
@@ -205,6 +200,29 @@ ul.bulleted li
 .y-2012 { background-position: -150px -180;}
 .y-2013 { background-position: -150px -240px;}
 .y-2014 { background-position: -150px -300px;}
+
+/*-------------------- projects --------------------*/
+.project
+{
+	display: block;
+	min-height: 60px;
+	margin-bottom: 20px;
+}
+
+.project h1
+{
+	font-size: 18px;
+	margin-bottom: -10px;
+}
+
+.projecticon
+{
+	float: left;
+	position: relative;
+	width: 76px;
+	height: 66px;
+	margin-bottom: -10px;
+}
 
 /*-------------------- footer --------------------*/
 #footer ul
