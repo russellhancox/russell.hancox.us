@@ -1,0 +1,241 @@
+/*
+  russell.hancox.us
+  Copyright (c) 2015 Russell Hancox
+*/
+/*-------------------- defaults --------------------*/
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:300|Raleway:300,500,400italic,700);
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+
+  background-color: #f7f7f7;
+  font-family: 'Raleway', 'Helvetica Neue', sans-serif;
+  font-weight: 200;
+  line-height: 1.4em;
+  font-size: 125%;
+
+  animation: fade-in 0.7s ease-in-out;
+}
+
+a, a > code {
+  color: #0088cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Inline code blocks */
+code {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 90%;
+  background-color: #f2f2f2;
+  color: #555555;
+  border-radius: 5px;
+  border: 1px solid #e7e7e7;
+  padding: 0 0.5rem;
+  display:block;
+  margin: 5px;
+  vertical-align: baseline;
+}
+
+/* Big code blocks */
+pre {
+  width: calc(100% + 4rem);
+  overflow: auto;
+  background: #f2f2f2;
+  border: 1px solid #E6E6E6;
+  border-radius: 3px;
+
+  box-sizing: border-box;
+  padding: 1rem;
+  margin-left: -2rem;
+}
+pre code {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-style-none {
+  list-style: none;
+  padding-left: 0;
+}
+
+/*-------------------- social --------------------*/
+@font-face {
+  font-family: 'Mono Social Icons Font';
+  font-weight: normal;
+  font-style: normal;
+  src: url('MonoSocialIconsFont-1.10.otf');
+}
+
+a[href^="https://twitter.com"]::before {
+  content: 'twitterbird';
+  color: #4da7de;
+  font-family: 'Mono Social Icons Font';
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+  font-size: 200%;
+  margin-right: 0.3em;
+  line-height: 1.0em;
+  vertical-align: sub;
+}
+
+a[href^="https://github.com"]::before {
+  content: 'githubalt';
+  color: #221e1b;
+  font-family: 'Mono Social Icons Font';
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+  font-size: 200%;
+  margin-right: 0.3em;
+  line-height: 1.0em;
+  vertical-align: sub;
+}
+
+a[href^="https://google.com/+"]::before {
+  content: 'googleplus';
+  color: #dd4b39;
+  font-family: 'Mono Social Icons Font';
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+  font-size: 200%;
+  margin-right: 0.3em;
+  line-height: 1.0em;
+  vertical-align: sub;
+}
+
+/*-------------------- header --------------------*/
+header {
+  padding: 30px;
+  border-bottom: 1px solid #e7e7e7;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+header h1, header h1 a:hover {
+  text-transform: lowercase;
+  word-spacing: -0.3em;
+  margin: 0px;
+  text-decoration: none;
+}
+
+header #firstname {
+  font-weight: 300;
+  color: #cccccc;
+}
+
+header #surname {
+  font-weight: 100;
+  color: #777777;
+}
+
+/*-------------------- content -------------------*/
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+article {
+  transition: width 0.75s;
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 800px) {
+  article {
+    width: 85%;
+  }
+}
+
+article h1, article h2, article h3 {
+  font-weight: lighter;
+  color: #444444;
+}
+
+article h1 { font-size: 3.5em; }
+article h2 { font-size: 2em; }
+article h3 { font-size: 1.5em; }
+
+article.post h1, article.post h2, article.post h3 {
+  text-align: center;
+}
+
+div.post-date {
+  text-align:center;
+  margin-top: -1.5em;
+  font-weight: 100;
+  font-size: 95%;
+  color: #333333;
+}
+
+/*-------------- syntax highlighting --------------*/
+/* Keyword, Keyword.Constants, Keyword.Declaration, Keyword.Pseudo */
+.highlight .k, .highlight .kc, .highlight .kd, .highlight .kp { color: #708; }
+
+/* Keyword.Type */
+.highlight .kt { color: #cb4b16; }
+
+/* Comment.Preproc */
+.highlight .cp { color: #996; }
+
+/* Comment, Comment.Multiline, Command.Single, Command.Special */
+.highlight .c, .highlight .cm, .highlight .c1, .highlight .cs {
+  color: #93a1a1;
+  float: none;
+  display: inline;
+}
+
+/* Literal.String, Literal.String.Backtick, Literal.String.Char,
+ * Literal.String.Doc, Literal.String.Double, Literal.String.Escape,
+ * Literal.String.Heredoc, Literal.String.Interpol, Literal.String.Other,
+ * Literal.String.Single, Literal.String.Symbol */
+.highlight .s,  .highlight .sb, .highlight .sc, .highlight .sd,
+.highlight .s2, .highlight .se, .highlight .sh, .highlight .si,
+.highlight .sx, .highlight .s1, .highlight .ss {
+  color: #5B6E04;
+}
+/* Literal.String.Regex */
+.highlight .sr { color: rgb(131, 108, 40); }
+
+/* Literal.Number.Float, Literal.Number.Hex, Literal.Number.Integer,
+ * Literal.Number.Octal, Literal.Number.Integer.Long */
+.highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il {
+  color: #586e75;
+}
+
+/* Text.Whitespace */
+.highlight .w { background: 333; }
+
+/* Error */
+.highlight .err { border-bottom: 1px solid red; }
+
+/* Operator */
+.highlight .o { color: #a90007;
+}
+
+/* Name, Name.Attribute, Name.Class, Name.Constant, Name.Entity
+ * Name.Exception, Name.Function, Name.Namespace, Name.Tag, Name.Variable */
+.highlight .n,  .highlight .na, .highlight .nc, .highlight .no, .highlight .ni,
+.highlight .ne, .highlight .nf, .highlight .nn, .highlight .nt, .highlight .nv {
+  color: #1C63A8;
+}
+
+/* Name.Label */
+.highlight .nl { color: rgb(170, 13, 145); }
+
+/* Literal.Number */
+.highlight .m { color: rgb(28, 0, 207); }
+
+/* Name.Builtin */
+.highlight .nb { color: #aa0d91; }

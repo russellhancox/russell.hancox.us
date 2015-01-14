@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+         russell.hancox.us
+  Copyright (c) 2016 Russell Hancox
+-->
+<html>
+  <head>
+    <title>Russell Hancox{% if page.title %} - {{ page.title }}{% endif %}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css" media="screen" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>
+          <a href="/">
+            <span id="firstname">Russell</span> <span id="surname">Hancox</span>
+          </a>
+        </h1>
+      </div>
+    </header>
+    <main>
+      <article class="{{ page.articleclass }}">
+{{ content }}
+      </article>
+    </main>
+  </body>
+</html>
