@@ -101,8 +101,8 @@ a[href^="https://github.com"]::before {
   vertical-align: sub;
 }
 
-a[href^="https://google.com/+"]::before {
-  content: 'googleplus';
+a[href^="https://linkedin.com/+"]::before {
+  content: 'linkedin';
   color: #dd4b39;
   font-family: 'Mono Social Icons Font';
   text-rendering: optimizeLegibility;
