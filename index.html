@@ -2,34 +2,30 @@
 title: About
 layout: index
 ---
-      <div id="about">
-        <h3>Public Key</h3>
-        <code>F3AD F3E9 EA72 E0C8 C8F1</code>
-        <code>gpg --keyserver keys.gnupg.net --recv-keys E0C8C8F1</code>
+<div id="about">
+  <h3>Other Sites</h3>
+  <ul class='list-style-none'>
+    <li><a href="https://linkedin.com/in/russellhancox">LinkedIn</a></li>
+    <li><a href="https://github.com/russellhancox">GitHub</a></li>
+  </ul>
 
-        <h3>Other Sites</h3>
-        <ul class='list-style-none'>
-          <li><a href="https://linkedin.com/in/russellhancox">LinkedIn</a></li>
-          <li><a href="https://github.com/russellhancox">GitHub</a></li>
-        </ul>
+  <h3>Misc</h3>
+  <ul>
+    <li>I'm a co-founder &amp; the CTO at <a href="https://northpole.security">North Pole Security</a></li>
+    <li>I'm interested in operating systems and computer security</li>
+  </ul>
+</div>
 
-        <h3>Misc</h3>
-        <ul>
-          <li>I'm a co-founder at <a href="https://northpolesec.com">North Pole Security</a></li>
-          <li>I'm interested in operating systems and computer security</li>
-        </ul>
-      </div>
-
-      {% if site.posts.size > 0 %}
-      <div id="articles">
-        <h3>Articles</h3>
-        <ul>
-        {% for post in site.posts %}
-          <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-          </li>
-        {% endfor %}
-        </ul>
-      </div>
-      {% endif %}
+{% if site.posts.size > 0 %}
+<div id="articles">
+  <h3>Articles</h3>
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+ </ul>
+</div>
+{% endif %}
 
